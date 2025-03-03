@@ -1,0 +1,171 @@
+<style><!--
+   .giftcard-header h2 {
+     font-family: Lato, Arial, sans-serif, Georgia;
+     font-size: 32px;
+     font-weight: 700;
+     margin-bottom: 0;
+     text-align: center;
+     margin: auto;
+     width: 50%; 
+     line-height: 40px;
+   }
+    .giftcard-header {
+      padding: 0 24px;
+    }
+    #mobile_GC_Header {
+      display: none !important;
+     }
+    .giftcard-header-mobile{
+      font-family: Trebuchet MS !important;
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      text-align: center;
+      margin: auto;
+      width: 90% !important; 
+    }
+   
+   .giftcard-header p {
+      margin-bottom: 0;
+      text-align: center;
+      margin: auto;
+      width: 50%; 
+  }
+  .header-data{
+    margin-top:5px;
+    width: 500px;
+    text-align: center;
+  }
+ .header-data2{
+    margin-top:7px !important;
+    width: 500px;
+    text-align: center;
+    margin-bottom:32px !important;
+  }
+  .check-balance-button {
+     border: none;
+     color: #fff;
+     background-color: #000;
+     text-align: center;
+     text-decoration: none;
+     padding: 10px 100px 10px 100px;
+     margin-top: 20px;
+     font-weight: 700;
+  }
+
+  #more {
+   display: none;
+  }
+
+  #ReadlessLink {
+    display: none;
+    text-decoration: underline;
+  }
+
+  #ReadMoreLink {
+   text-decoration: underline;
+  }
+
+  @media (max-width: 959px) {
+    #mobile_GC_Header {
+      margin-bottom: 15px !important;
+      margin-top: -10px !important;
+    }
+   .giftcard-header p{
+      width: 100%; 
+    }
+   .header-data2 {
+     margin-top: 7px !important;
+     text-align: center;
+     display: block;
+     margin-bottom: 16px !important;
+     width: 100% !important;  
+   }
+  }
+
+   @media (max-width: 599px){
+      .giftcard-header h2 {
+         font-size: 24px;
+      }
+   }
+
+   @media (max-width: 400px) {
+   .giftcard-header p{
+      width: 85% !important; 
+    }
+     .header-data2 {
+       margin-top: 7px !important;
+       text-align: center;
+       display: block;
+       margin-bottom: 16px !important;
+       width: 90% !important;  
+     }
+
+  }
+
+--></style>   
+<div>
+<div id="desktop_GC_Header">
+<div class="giftcard-header">
+<h2>eGIFT CARD</h2>
+<p class="header-data">Whether you’re treating yourself or someone else a Styletread eGift card is the perfect choice to help put your best foot forward.</p>
+<p class="header-data2">Simply follow the below 2 easy steps.</p>
+</div>
+</div>
+
+<div id="mobile_GC_Header">
+<div class="giftcard-header">
+<h2 class="giftcard-header-mobile">eGIFT CARD</h2>
+<p class="header-data">Whether you’re treating yourself or someone else a Styletread eGift card is the perf<span id="dots">...<a onclick="myFunction()" id="ReadMoreLink">Read more</a></span><span id="more">ect choice to help put your best foot forward.
+<span class="header-data2"> Simply follow the below 2 easy steps.<span onclick="ReadLessFunction()" id="ReadlessLink">Read less</span></span></span></p>
+</div>
+</div>
+</div>
+
+<script>
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+desktopHeader = document.getElementById("desktop_GC_Header");
+mobileHeader = document.getElementById("mobile_GC_Header");
+if(isMobile){
+desktopHeader.style.display = "none";
+mobileHeader.style.display ="block";
+}else{
+desktopHeader.style.display = "block";
+mobileHeader.style.display ="none";
+}
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var ReadMoreLinkText = document.getElementById("ReadMoreLink");
+  var ReadlessLinkText = document.getElementById("ReadlessLink");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    ReadMoreLinkText.innerHTML = "Read more";
+    moreText.style.display = "none";
+   ReadlessLinkText.style.display = "none";
+
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    ReadlessLinkText.style.display = "inline";
+  }
+}
+function ReadLessFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var ReadMoreLinkText = document.getElementById("ReadMoreLink");
+  var ReadlessLinkText = document.getElementById("ReadlessLink");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    ReadMoreLinkText.innerHTML = "Read more";
+    moreText.style.display = "none";
+    ReadlessLinkText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    ReadMoreLinkText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+    ReadlessLinkText.style.display = "inline";
+  }
+}
+</script>
