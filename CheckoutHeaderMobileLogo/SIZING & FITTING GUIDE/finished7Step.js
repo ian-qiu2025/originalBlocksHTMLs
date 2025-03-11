@@ -58,7 +58,7 @@ style.textContent = `
             letter-spacing: 0.5px;
             font-style: normal;
             font-weight: 400;
-            max-width: 645px;
+            max-width: 650px;
             line-height: 1.8;
             margin: auto;
         }
