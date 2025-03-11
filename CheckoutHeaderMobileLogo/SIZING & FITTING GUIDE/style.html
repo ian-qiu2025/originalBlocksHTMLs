@@ -1,0 +1,239 @@
+<style>
+    .size-fitting-wrapper {
+        [data-content-type="text"] {
+            margin: auto;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: .7px;
+            font-style: normal;
+            font-weight: 400;
+            max-width: 645px;
+            line-height: 1.8;
+        }
+
+        [data-content-type="buttons"] {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .pagebuilder-button-primary {
+            padding: 16px 20px !important;
+            letter-spacing: 2px !important;
+            transition: .4s !important;
+            cursor: pointer !important;
+            box-sizing: border-box !important;
+            margin: 0 10px 10px 0;
+            text-decoration: none !important;
+            background: #fff;
+            color: #000;
+            border: 1px solid #000 !important;
+            min-width: 195px !important;
+            min-height: 55px !important;
+            border-radius: 50px !important;
+        }
+
+        .active-cta .pagebuilder-button-primary {
+            background: #000 !important;
+            color: #fff !important;
+        }
+
+        .active-cta .pagebuilder-button-primary:hover {
+            background: rgba(0, 0, 0, .75) !important;
+        }
+
+        .pagebuilder-button-primary:hover {
+            background: rgba(0, 0, 0, .1) !important;
+        }
+
+        .pagebuilder-button-primary span {
+            letter-spacing: .7px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+    }
+
+    .stage-range {
+        p {
+            margin: 0 auto;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #6f6f6f;
+            letter-spacing: 1.6px;
+            line-height: 1.1;
+        }
+
+        img {
+            max-height: 100px;
+        }
+
+        figure {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            height: 100px;
+
+            div {
+                justify-content: center;
+            }
+        }
+
+        .pagebuilder-column-line {
+            gap: 16px;
+        }
+
+        .pagebuilder-column {
+            text-align: center;
+            justify-content: flex-end !important;
+        }
+
+        .pagebuilder-button-primary {
+            max-width: 105px;
+            padding: 8px 20px;
+            border-radius: 999px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 12px;
+            text-align: center;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        [data-content-type="buttons"] {
+            padding-bottom: 15px;
+        }
+
+        .blue a {
+            background-color: #00a7cf;
+        }
+
+        .yellow a {
+            background-color: #ffc52e;
+        }
+
+        .pink a {
+            background-color: #ae24ab;
+        }
+
+        .green a {
+            background-color: #03bbb5;
+        }
+
+        .orange a {
+            background-color: #ff5b34;
+        }
+    }
+
+    @media (max-width: 959px) {
+        .stage-range {
+            .pagebuilder-column-line {
+                flex-wrap: wrap;
+                max-width: 75%;
+                margin: auto;
+                row-gap: 40px;
+                justify-content: center;
+            }
+
+            .pagebuilder-column {
+                width: 48% !important;
+            }
+        }
+    }
+</style>
+
+<style>
+    .cms-bobux-sizing-and-fitting-guide .size-fitting-wrapper,
+    .cms-bobux-sizing-and-fitting-guide .right-size-wrapper,
+    .cms-bobux-sizing-and-fitting-guide .stage-range,
+    .cms-bobux-sizing-and-fitting-guide .comfort-wrapper {
+        h2 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            margin: 0 auto 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1.1;
+            max-width: 830px !important;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 20px auto;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #171E26;
+            letter-spacing: 1.6px;
+            line-height: 1.1;
+            font-weight: 600;
+            height: 30px;
+        }
+
+        h4 {
+            margin: 0 auto 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #526240;
+            letter-spacing: 1.6px;
+            line-height: 1.1;
+            max-width: 830px !important;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin: 20px auto;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1.1;
+            max-width: 830px !important;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            font-style: normal;
+            font-weight: 400;
+            max-width: 645px;
+            line-height: 1.8;
+            margin: auto;
+        }
+
+        .tab-slider-wrapper [class*="Tap-module_wrapper"] {
+            background: #f9efe6;
+            padding: 20px;
+        }
+
+        [data-testid="carousel"] {
+            width: 100% !important;
+
+            [class*="Tap-module_headingContainer"] {
+                width: 100%;
+            }
+
+            [class*="Tap-module_heading"] {
+                white-space: nowrap;
+                justify-content: space-between;
+            }
+
+            .react-multi-carousel-track .pagebuilder-column-group {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .cms-bobux-sizing-and-fitting-guide .cms-page-content {
+        [data-content-type="row"] {
+            padding-bottom: 40px;
+        }
+
+    }
+</style>
