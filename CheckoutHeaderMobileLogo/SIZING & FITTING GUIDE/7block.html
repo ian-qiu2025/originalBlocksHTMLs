@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative 7 Blocks Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            width: 80vw;
+            max-width: 400px;
+        }
+        .block {
+            aspect-ratio: 1 / 1;
+            background-color: #ff6b6b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .block:hover {
+            transform: scale(1.1);
+            background-color: #ff4757;
+        }
+        .block:nth-child(2) { background-color: #ffa502; }
+        .block:nth-child(3) { background-color: #2ed573; }
+        .block:nth-child(4) { background-color: #1e90ff; }
+        .block:nth-child(5) { background-color: #3742fa; }
+        .block:nth-child(6) { background-color: #b71540; }
+        .block:nth-child(7) { background-color: #6c5ce7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+        <div class="block">4</div>
+        <div class="block">5</div>
+        <div class="block">6</div>
+        <div class="block">7</div>
+    </div>
+</body>
+</html>
