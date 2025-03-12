@@ -64,11 +64,10 @@ style.textContent = `
         }
 
         .tab-slider-wrapper [class*="Tap-module_wrapper"] {
-            background: #f9efe6;
+           
         }
 
         [data-testid="carousel"] {
-            width: 100% !important;
 
             [class*="Tap-module_headingContainer"] {
                 width: 100%;
