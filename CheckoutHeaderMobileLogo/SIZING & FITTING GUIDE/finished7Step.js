@@ -65,7 +65,6 @@ style.textContent = `
 
         .tab-slider-wrapper [class*="Tap-module_wrapper"] {
             background: #f9efe6;
-            padding: 20px;
         }
 
         [data-testid="carousel"] {
@@ -133,9 +132,6 @@ style.textContent = `
                 max-width: 100%;
             }
 
-            .tab-slider-wrapper [class*="Tap-module_wrapper"] {
-                padding: 15px;
-            }
 
             [data-testid="carousel"] {
                 [class*="Tap-module_headingContainer"] {
