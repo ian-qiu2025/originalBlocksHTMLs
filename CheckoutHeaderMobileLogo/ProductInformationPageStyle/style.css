@@ -1,0 +1,15 @@
+.faq-wrapper h3::after {
+    background-image: url(https://mcstaging.munrofootweargroup.com.au/media/wysiwyg/Williams/cms-pages/chevron-down-solid-down.png);
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    content: "";
+ }               
+
+ .faq-wrapper h3.expandHead::after {
+     background-image: url(https://mcstaging.munrofootweargroup.com.au/media/wysiwyg/Williams/cms-pages/chevron-down-solid-up.png);
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+      content: "";
+   }
