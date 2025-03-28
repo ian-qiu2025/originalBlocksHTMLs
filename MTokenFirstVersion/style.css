@@ -1,0 +1,29 @@
+:root {
+    /**
+    * @tokens Mathers Colours
+    * @presenter Color
+    */
+    --mathers-primary-colour:#0043D4;    
+    --mathers-secondary-colour: #FA374B;
+    --mathers-font-family: "inter-tight",sans-serif;
+
+    --primary-colour: var(--mathers-primary-colour);
+    --button-secondary-text: var( --mathers-primary-colour);
+    --secondary-button-border: 1px solid var(--mathers-primary-colour); 
+
+    --font-family: var(--mathers-font-family);
+
+      /* Accordion and Tap module */
+    --font-weight-accordion-heading: 600;
+    --font-weight-tap-active: 600;
+    --font-weight-tap: 300;
+      /**
+    * FontWeight Overrides
+    */
+    --popup-header-font-weight: 600;
+
+    --border-accordian: 1px solid #F2F4F9;
+    --plp-tile-category-label-desktop-fontSize: 14px;
+
+    --toogle-font-weight: var(--font-weight-b);
+}
